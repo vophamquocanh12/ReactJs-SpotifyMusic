@@ -1,13 +1,11 @@
 import './App.css';
+import { useState } from 'react';
 
-// import Navbar from './components/Navbar';
-// import DetailSong from './components/DetailSong'
-// import ListSong from './components/ListSongs'
+
 import {Songs} from './Context'
 import DataSongs from './data/songs.json'
 import {Navbar, DetailSong, ListSongs, Playing} from './components/index'
-// import Playing from './components/Playing'
-import { useState } from 'react';
+
 
 function App() {
 
