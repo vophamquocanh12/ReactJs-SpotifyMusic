@@ -1,11 +1,12 @@
 import './App.css';
 
-import Navbar from './components/Navbar';
-import DetailSong from './components/DetailSong'
-import ListSong from './components/ListSongs'
+// import Navbar from './components/Navbar';
+// import DetailSong from './components/DetailSong'
+// import ListSong from './components/ListSongs'
 import {Songs} from './Context'
 import DataSongs from './data/songs.json'
-import Playing from './components/Playing'
+import {Navbar, DetailSong, ListSongs, Playing} from './components/index'
+// import Playing from './components/Playing'
 import { useState } from 'react';
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
      <Navbar />
       <div className='grid grid-cols-3 bg-slate-800 h-screen-navbar-player overflow-hidden'>
         <DetailSong />
-        <ListSong />
+        <ListSongs />
       </div>
       <Playing />
      </Songs.Provider>
